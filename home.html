@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Crochê do Sul — Home</title>
+  <link rel="stylesheet" href="home-estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-top">
+      <div class="logo"><a href="index.html">Crochê do Sul🧶</a></div>
+
+      <!-- BARRA DE PESQUISA -->
+      <div class="search">
+        <input type="search" placeholder="Pesquisar produtos..." aria-label="Pesquisar"/>
+        <button aria-label="Buscar">🔍</button>
+        
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="categoria.html">Categorias</a></li>
+          <li><a href="conta.html">Conta</a></li>
+          <li><a href="carrinho.html">Carrinho 🛒</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    
+    <div class="header-bottom">
+      <span class="small-menu">Novidades • Promoções • Lançamentos</span>
+    </div>
+  </header>
+
+  <!-- BANNER PRINCIPAL -->
+<div class="banner-container">
+    <img src="Banner 1.png"  class="banner-img">
+   <!--<div class="banner-text">Crochê, alma Gaúcha — Feito à mão com qualidade.</div>-->
+    
+</div>
+
+
+    <!-- Bolinhas de navegação -->
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</div>
+
+
+  <!-- SEÇÃO CATEGORIAS -->
+  <section class="section container categorias">
+    <h2>Categorias</h2>
+    <div class="grid-categorias">
+      <a href="categoria.html?cat=tapetes" class="cat-card">
+        <img src="tapete1.jpeg" alt="Tapetes" />
+        <span>Tapetes</span>
+      </a>
+
+      <a href="categoria.html?cat=almofadas" class="cat-card">
+        <img src="almofada1.jpeg" alt="Almofadas" />
+        <span>Almofadas</span>
+      </a>
+
+      <a href="categoria.html?cat=sousplat" class="cat-card">
+        <img src="souplet1.jpeg" alt="Sousplat" />
+        <span>Sousplat</span>
+      </a>
+
+      <a href="categoria.html?cat=decor" class="cat-card">
+        <img src="decoracoes1.jpeg" alt="Decoração" />
+        <span>Decoração</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- BANNERS PEQUENOS / PROMO -->
+  <section class="section container mid-banner">
+    <img src="banner promo.jpg" alt="Promoção" />
+  </section>
+
+  <!--  MAIS VENDIDOS -->
+  <section class="section container bestsellers">
+    <h2>Mais vendidos</h2>
+
+    <!-- filtro rápido -->
+    <div class="filters">
+      <button class="filter active">Todos</button>
+      <button class="filter">Novos</button>
+      <button class="filter">Oferta</button>
+      <button class="filter">Mais avaliados</button>
+    </div>
+
+    <!-- GRID DE PRODUTOS (vários cards para rolar) -->
+    <div class="grid-produtos">
+      
+      <article class="prod-card">
+        <a href="produto.html?id=1">
+          <img src="tapete trancado1.jpg" alt="Produto 1" loading="lazy" />
+          <h3>Tapete Trançado P</h3>
+          <p class="price">R$ 79,90</p>
+        </a>
+        <div class="prod-actions">
+          <a class="btn-outline" href="produto.html?id=1">Ver</a>
+          <a class="btn" href="carrinho.html?add=1">Adicionar</a>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <a href="produto.html?id=2">
+          <img src="almofada floral.jpg" alt="Produto 2" loading="lazy" />
+          <h3>Almofada Floral</h3>
+          <p class="price">R$ 49,90</p>
+        </a>
+        <div class="prod-actions">
+          <a class="btn-outline" href="produto.html?id=2">Ver</a>
+          <a class="btn" href="carrinho.html?add=2">Adicionar</a>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <a href="produto.html?id=3">
+          <img src="cachecol.jpg" alt="Produto 3" loading="lazy" />
+          <h3>Cachecol de Fio</h3>
+          <p class="price">R$ 39,90</p>
+        </a>
+        <div class="prod-actions">
+          <a class="btn-outline" href="produto.html?id=3">Ver</a>
+          <a class="btn" href="carrinho.html?add=3">Adicionar</a>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <a href="produto.html?id=4">
+          <img src="centro de mesa.jpg" alt="Produto 4" loading="lazy" />
+          <h3>Centro de Mesa</h3>
+          <p class="price">R$ 59,90</p>
+        </a>
+        <div class="prod-actions">
+          <a class="btn-outline" href="produto.html?id=4">Ver</a>
+          <a class="btn" href="carrinho.html?add=4">Adicionar</a>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <a href="produto.html?id=5">
+          <img src="jogo de suplet.jpg" alt="Produto 5" loading="lazy" />
+          <h3>Jogo de Sousplat</h3>
+          <p class="price">R$ 99,90</p>
+        </a>
+        <div class="prod-actions">
+          <a class="btn-outline" href="produto.html?id=5">Ver</a>
+          <a class="btn" href="carrinho.html?add=5">Adicionar</a>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <a href="produto.html?id=6">
+          <img src="tapete redondo.webp" alt="Produto 6" loading="lazy" />
+          <h3>Tapete Redondo</h3>
+          <p class="price">R$ 119,90</p>
+        </a>
+        <div class="prod-actions">
+          <a class="btn-outline" href="produto.html?id=6">Ver</a>
+          <a class="btn" href="carrinho.html?add=6">Adicionar</a>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <a href="produto.html?id=7">
+          <img src="bolsa1.webp" alt="Produto 7" loading="lazy" />
+          <h3>Bolsa Elegante</h3>
+          <p class="price">R$ 34,90</p>
+        </a>
+        <div class="prod-actions">
+          <a class="btn-outline" href="produto.html?id=7">Ver</a>
+          <a class="btn" href="carrinho.html?add=7">Adicionar</a>
+        </div>
+      </article>
+
+      <article class="prod-card">
+        <a href="produto.html?id=8">
+          <img src="vestido.jpg" alt="Produto 8" loading="lazy" />
+          <h3>Vestido Luxo</h3>
+          <p class="price">R$ 129,90</p>
+        </a>
+        <div class="prod-actions">
+          <a class="btn-outline" href="produto.html?id=8">Ver</a>
+          <a class="btn" href="carrinho.html?add=8">Adicionar</a>
+        </div>
+      </article>
+
+    </div> <!-- /grid-produtos -->
+
+    <!-- botão ver mais (pode linkar paginacao) -->
+    <div class="center">
+      <a class="btn-secondary" href="categoria.html">Ver mais produtos</a>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="footer-top container">
+      <div class="col">
+        <h4>Loja</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="categoria.html">Categorias</a></li>
+          <li><a href="conta.html">Trabalhe conosco</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="politica.html">Política de Privacidade</a></li>
+          <li><a href="trocas.html">Trocas & Devoluções</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Siga-nos</h4>
+        <ul class="socials">
+          <li><a href="#">Instagram: crochêdosul@gmail.com.br</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="ano"></span> Crochê do Sul — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    
+    document.getElementById('ano').innerText = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

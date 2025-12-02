@@ -1,0 +1,98 @@
+
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,Arial,Helvetica,sans-serif;background:#c9c7e8;color:#222;line-height:1.35}
+.container{max-width:1100px;margin:0 auto;padding:16px}
+
+/* HEADER */
+.site-header{background:#eae7ef}
+.header-top{display:flex;align-items:center;gap:12px;padding:12px 0}
+.logo a{display:inline-block;padding:6px 10px;background:#fff;border-radius:6px;text-decoration:none;color:#222;font-weight:700}
+.search{display:flex;align-items:center;flex:1;min-width:220px;background:#fff;padding:6px;border-radius:8px;margin:0 12px}
+.search input{border:none;outline:none;padding:8px 10px;font-size:14px;flex:1;background:transparent}
+.search button{background:#d4a6be;border:none;padding:8px 10px;border-radius:6px;cursor:pointer}
+.main-nav ul{display:flex;gap:8px;list-style:none}
+.main-nav a{display:inline-block;padding:6px 10px;background:#fff;border-radius:6px;text-decoration:none;color:#222}
+.main-nav a.active{background:#d4a6be}
+
+/* banner do header (imagem) */
+.header-banner img{width:100%;height:240px;object-fit:cover;display:block;filter:brightness(.98)}
+
+/* TÍTULO */
+.top-message{padding:28px 0 6px}
+.top-message h1{text-align:left;font-size:20px;padding:10px;background:#e7dfe6;display:inline-block;border-radius:4px}
+
+/* LAYOUT PRINCIPAL */
+.layout{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-top:18px}
+
+/* COLUNA ESQUERDA */
+.col-left{
+
+/* COMPRAS RECENTES */
+.compras-recentes h2{margin-bottom:12px}
+.recent-list{display:flex;flex-direction:column;gap:12px}
+.recent-item{display:flex;align-items:center;gap:12px;background:rgba(212,166,190,0.12);padding:12px;border-radius:8px}
+.recent-item img{width:140px;height:120px;object-fit:cover;border-radius:6px}
+.recent-info h3{font-size:15px;margin-bottom:6px}
+.recent-info .price{font-weight:700;color:#222}
+.recent-action .btn{background:#fff;padding:8px 12px;border-radius:20px;text-decoration:none;color:#222;display:inline-block}
+}
+/* ADICIONADOS AO CARRINHO */
+.adicionados h2{margin:20px 0 12px}
+.cart-grid{display:flex;flex-direction:column;gap:18px}
+.cart-item{display:flex;gap:14px;background:#efe9f2;padding:12px;border-radius:8px;align-items:flex-start}
+.cart-item img{width:240px;height:200px;object-fit:cover;border-radius:6px}
+.cart-desc h3{font-size:17px;margin-bottom:6px}
+.cart-desc .sku{font-size:13px;color:#666;margin-bottom:6px}
+.cart-desc .price{font-weight:700;margin-bottom:10px}
+.qty-line{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.qty-line input{width:64px;padding:6px;border-radius:6px;border:1px solid #ccc}
+
+/* ações */
+.cart-actions{display:flex;gap:8px}
+.btn-outline{display:inline-block;padding:8px 12px;border-radius:6px;text-decoration:none;background:#fff;border:1px solid #d4a6be;color:#222}
+.btn-ghost{background:transparent;border:1px solid transparent;color:#b33;cursor:pointer}
+
+/* COLUNA DIREITA - RESUMO */
+.col-right{
+.summary{background:#efe9f2;padding:18px;border-radius:8px;position:sticky;top:90px}
+.summary h2{margin-bottom:12px}
+.summary-line{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed rgba(0,0,0,0.05)}
+.summary-total{display:flex;justify-content:space-between;padding:14px 0;font-weight:800;font-size:18px}
+.summary-actions{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+.btn-primary{display:inline-block;background:#d4a6be;padding:10px 14px;border-radius:8px;text-decoration:none;color:#111;text-align:center}
+.btn-outline{display:inline-block;background:#fff;padding:10px 12px;border-radius:8px;text-decoration:none;color:#111;text-align:center;border:1px solid #d4a6be}
+.payment-note{margin-top:12px;display:flex;gap:8px;align-items:center}
+.payment-note input{flex:1;padding:8px;border-radius:6px;border:1px solid #ccc}
+.btn-small{padding:8px 10px;border-radius:6px;background:#fff;border:1px solid #d4a6be;cursor:pointer}
+}
+/* RODAPÉ */
+.site-footer{margin-top:30px;padding:18px 0;background:#eae7ef;text-align:center}
+
+/* RESPONSIVIDADE */
+
+/* tablet */
+@media (max-width: 992px){
+  .layout{grid-template-columns:1fr 320px}
+  .header-banner img{height:160px}
+  .cart-item img{width:200px;height:160px}
+}
+
+/* mobile */
+@media (max-width: 700px){
+  .header-top{flex-direction:column;gap:10px;align-items:stretch}
+  .search{order:2;width:100%;margin:0}
+  .main-nav ul{justify-content:center;flex-wrap:wrap}
+  .header-banner img{height:140px}
+  .layout{grid-template-columns:1fr;gap:18px}
+  .summary{position:relative;top:0}
+  .cart-item{flex-direction:column;align-items:center}
+  .cart-item img{width:100%;height:auto}
+  .recent-item{flex-direction:column;align-items:flex-start}
+}
+
+/* telefone */
+@media (max-width:420px){
+  .recent-item img{width:100%;height:auto}
+  .cart-desc .price{font-size:16px}
+}
+

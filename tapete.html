@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Categoria — Crochê do Sul</title>
+  <link rel="stylesheet" href="tapete-estilo.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">Crochê do Sul🧶</a>
+
+      <div class="search">
+        <input type="search" placeholder="Pesquisar produtos..." aria-label="Pesquisar">
+        <button aria-label="Buscar">🔍</button>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="categoria.html">Categorias</a>
+        <a href="conta.html">Conta</a>
+        <a href="carrinho.html">Carrinho 🛒</a>
+      </nav>
+    </div>
+  </header>
+
+  <!--  DESTAQUE DO TOPO -->
+  <section class="hero container">
+    <div class="hero-left">
+    
+      <img src="tapete2.jpeg" alt="Produto destaque" class="hero-img">
+    </div>
+
+    <div class="hero-right">
+      <h1 class="produto-titulo">Tapete</h1>
+      <p class="produto-sub">Feito à mão • fio ecológico • produção local</p>
+
+      <div class="preco-linha">
+        <span class="preco">R$ 79,90</span>
+      </div>
+
+      <div class="acoes-hero">
+        <a class="btn-primary" href="carrinho.html?add=bolsa">ADICIONAR AO CARRINHO</a>
+        <a class="btn-outline" href="produto.html?id=bolsa">VER DETALHES</a>
+      </div>
+
+      <div class="meta">
+        <p><strong>Categoria Casa:</strong> Casa • Tapete</p>
+        <p><strong>Disponibilidade:</strong> 100</p>
+      </div>
+    </div>
+  </section>
+
+  <!--  GRADE DE PRODUTOS -->
+  <section class="container produtos-section">
+    <aside class="filtros">
+      <h3>Filtrar</h3>
+
+      <div class="filtro-bloco">
+        <label>Preço</label>
+        <input type="range" min="10" max="500" value="250">
+      </div>
+
+      <div class="filtro-bloco">
+        <label>Categoria</label>
+        <ul class="filtro-list">
+          <li><a href="categoria.html?cat=moda">Moda</a></li>
+          <li><a href="categoria.html?cat=decor">Decoração</a></li>
+          <li><a href="categoria.html?cat=acessorios">Acessórios</a></li>
+        </ul>
+      </div>
+
+      <div class="filtro-bloco">
+        <label>Tamanho</label>
+        <select>
+          <option>Todos</option>
+          <option>60 cm x 40 cm</option>
+          <option>90 cm x 60 cm</option>
+          <option>120 cm x 80 cm</option>
+        </select>
+      </div>
+    </aside>
+
+    <div class="produtos-grid-area">
+      <div class="secao-titulo">
+        <h2>Destaques para casa</h2> 
+        <div class="ordenar">
+          <label>Ordenar:</label>
+          <select>
+            <option>Mais populares</option>
+            <option>Mais recentes</option>
+            <option>Menor preço</option>
+            <option>Maior preço</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- GRID DE PRODUTOS:  -->
+      <div class="grid-produtos">
+
+        <!-- exemplo de card  -->
+        <article class="card">
+          <a href="produto.html?id=1">
+            <img src="trilho de mesa.png" alt="Trilho de mesa">
+            <h3>Trilho de mesa</h3>
+            <p class="card-price">R$ 99,90</p>
+          </a>
+          <div class="card-actions">
+            <a class="btn" href="carrinho.html?add=1">Adicionar</a>
+            <a class="link" href="produto.html?id=1">Ver</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="produto.html?id=2">
+            <img src="colcha de cama.jpg" alt="Colcha de cama">
+            <h3>Colcha de cama</h3>
+            <p class="card-price">R$ 200,00</p>
+          </a>
+          <div class="card-actions">
+            <a class="btn" href="carrinho.html?add=2">Adicionar</a>
+            <a class="link" href="produto.html?id=2">Ver</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="produto.html?id=3">
+            <img src="almofada_leao.jpg" alt="Almofada">
+            <h3>Almofada lion</h3>
+            <p class="card-price">R$ 85,00</p>
+          </a>
+          <div class="card-actions">
+            <a class="btn" href="carrinho.html?add=3">Adicionar</a>
+            <a class="link" href="produto.html?id=3">Ver</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="produto.html?id=4">
+            <img src="tapete retangulo.jpg" alt="Tapete">
+            <h3>Tapete De Sala</h3>
+            <p class="card-price">R$ 150,00</p>
+          </a>
+          <div class="card-actions">
+            <a class="btn" href="carrinho.html?add=4">Adicionar</a>
+            <a class="link" href="produto.html?id=4">Ver</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="produto.html?id=5">
+            <img src="jogo de banheiro.png" alt="Jogo de Banheiro">
+            <h3>Jogo de Banheiro</h3>
+            <p class="card-price">R$ 79,90</p>
+          </a>
+          <div class="card-actions">
+            <a class="btn" href="carrinho.html?add=5">Adicionar</a>
+            <a class="link" href="produto.html?id=5">Ver</a>
+          </div>
+        </article>
+
+        
+        <article class="card">
+          <a href="produto.html?id=6">
+            <img src="souplet2.jpg" alt="Sousplat">
+            <h3>Sousplat</h3>
+            <p class="card-price">R$ 60,99</p>
+          </a>
+          <div class="card-actions">
+            <a class="btn" href="carrinho.html?add=6">Adicionar</a>
+            <a class="link" href="produto.html?id=6">Ver</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="produto.html?id=7">
+            <img src="decoracoes2.webp" alt="Decoração">
+            <h3>Decoração</h3>
+            <p class="card-price">R$ 39,90</p>
+          </a>
+          <div class="card-actions">
+            <a class="btn" href="carrinho.html?add=7">Adicionar</a>
+            <a class="link" href="produto.html?id=7">Ver</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <a href="produto.html?id=8">
+            <img src="kit para baby.jpg" alt="Acessório">
+            <h3>Kit para Bebê</h3>
+            <p class="card-price">R$ 40,90</p>
+          </a>
+          <div class="card-actions">
+            <a class="btn" href="carrinho.html?add=8">Adicionar</a>
+            <a class="link" href="produto.html?id=8">Ver</a>
+          </div>
+        </article>
+
+      </div> <!-- grid-produtos -->
+
+      <div class="ver-mais">
+        <a class="btn-secondary" href="categoria.html?page=2">Ver mais produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- descrição / caract -->
+  <section class="container detalhe-section">
+    <div class="detalhe-left">
+      <h2>Descrição</h2>
+      <p>Feito à mão, com cuidado em cada ponto. Produto ecológico, durável e com acabamento profissional. Ideal para uso diário e presente.</p>
+    </div>
+
+    <div class="detalhe-right">
+      <h2>Características</h2>
+      <ul>
+        <li>Material: fio 100% algodão</li>
+        <li>Produção: artesanal</li>
+        <li>Cuidados: lavar à mão</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TALVEZ VOCÊ GOSTE 
+  <section class="container talvez-section">
+    <h2>Talvez você goste</h2>
+    <div class="grade-goste">
+      <a class="goste-item" href="produto.html?id=9"><img src="https://via.placeholder.com/420x320?text=Produto+9" alt=""><span>Canvas Tapete</span></a>
+      <a class="goste-item" href="produto.html?id=10"><img src="https://via.placeholder.com/420x320?text=Produto+10" alt=""><span>Almofada</span></a>
+      <a class="goste-item" href="produto.html?id=11"><img src="https://via.placeholder.com/420x320?text=Produto+11" alt=""><span>Bolsa Pequena</span></a>
+      <a class="goste-item" href="produto.html?id=12"><img src="https://via.placeholder.com/420x320?text=Produto+12" alt=""><span>Chapéu</span></a>
+    </div>
+  </section> -->
+
+  <!-- RODAPÉ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="col">
+        <h4>Loja</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categoria.html">Categorias</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Ajuda</h4>
+        <ul>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="politica.html">Política</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4>Siga-nos</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">crochêdosul@gmail.com.br</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="ano"></span> Crochê do Sul — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('ano').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>

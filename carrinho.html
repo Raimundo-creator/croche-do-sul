@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Carrinho — Crochê do Sul</title>
+  <link rel="stylesheet" href="carrinho-estilo.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-top container">
+      <div class="logo"><a href="index.html">Crochê do Sul🧶</a></div>
+
+      <div class="search">
+        <input type="search" placeholder="Pesquisar produtos..." aria-label="Pesquisar"/>
+        <button aria-label="Buscar">🔍</button>
+      </div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categoria.html">Categorias</a></li>
+          <li><a href="conta.html">Conta</a></li>
+          <li><a class="active" href="carrinho.html">Carrinho🛒</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-banner">
+      <!-- usa a imagem que você carregou -->
+      <img src="banner carrinho.jpg" alt="banner topo"/>
+    </div>
+  </header>
+
+  <!-- TÍTULO -->
+  <main class="container page-carrinho">
+    <section class="top-message">
+      <h1>SEU CARRINHO ESTÁ TE ESPERANDO</h1>
+      <p>Confira os itens, adicione cupons e finalize a compra.</p>
+    </section>
+
+    <!-- área principal: coluna esquerda (recentes + lista) ) -->
+    <div class="layout">
+      <div class="col-left">
+
+        <!-- COMPRAS RECENTES -->
+        <section class="compras-recentes">
+          <h2>COMPRAS RECENTES</h2>
+
+          <div class="recent-list">
+            <article class="recent-item">
+              <img src="tapete trancado1.jpg" alt="Produto A"/>
+              <div class="recent-info">
+                <h3>Tapete Trançado P</h3>
+                <p class="price">R$ 79,90</p>
+              </div>
+              <div class="recent-action">
+                <a class="btn" href="produto.html?id=1">Comprar novamente</a>
+              </div>
+            </article>
+
+            <article class="recent-item">
+              <img src="almofada floral.jpg" alt="Produto B"/>
+              <div class="recent-info">
+                <h3>Almofada Floral</h3>
+                <p class="price">R$ 49,90</p>
+              </div>
+              <div class="recent-action">
+                <a class="btn" href="produto.html?id=2">Comprar novamente</a>
+              </div>
+            </article>
+
+            <article class="recent-item">
+              <img src="centro de mesa.jpg" alt="Produto C"/>
+              <div class="recent-info">
+                <h3>Centro de Mesa</h3>
+                <p class="price">R$ 59,90</p>
+              </div>
+              <div class="recent-action">
+                <a class="btn" href="produto.html?id=3">Comprar novamente</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ADICIONADOS AO CARRINHO  -->
+        <section class="adicionados">
+          <h2>ADICIONADOS AO CARRINHO</h2>
+
+          <div class="cart-grid">
+            <!-- card de produto no carrinho -->
+            <article class="cart-item">
+              <img src="jogo de suplet.jpg" alt="Produto 1"/>
+              <div class="cart-desc">
+                <h3>Jogo de souplet</h3>
+                <p class="sku">SKU: TP-001</p>
+                <p class="price">R$ 99,90</p>
+
+                <div class="qty-line">
+                  <label>Quantidade:</label>
+                  <input type="number" value="1" min="1"/>
+                </div>
+
+                <div class="cart-actions">
+                  <a href="produto.html?id=1" class="btn-outline">Ver produto</a>
+                  <button class="btn-ghost">Remover</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="cart-item">
+              <img src="tapete redondo.webp" alt="Produto 2"/>
+              <div class="cart-desc">
+                <h3>Tapete Redondo</h3>
+                <p class="sku">SKU: AL-002</p>
+                <p class="price">R$ 119,90</p>
+
+                <div class="qty-line">
+                  <label>Quantidade:</label>
+                  <input type="number" value="2" min="1"/>
+                </div>
+
+                <div class="cart-actions">
+                  <a href="produto.html?id=2" class="btn-outline">Ver produto</a>
+                  <button class="btn-ghost">Remover</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="cart-item">
+              <img src="vestido.jpg" alt="Produto 3"/>
+              <div class="cart-desc">
+                <h3>Vestido de Luxo</h3>
+                <p class="sku">SKU: JS-005</p>
+                <p class="price">R$ 129,90</p>
+
+                <div class="qty-line">
+                  <label>Quantidade:</label>
+                  <input type="number" value="1" min="1"/>
+                </div>
+
+                <div class="cart-actions">
+                  <a href="produto.html?id=3" class="btn-outline">Ver produto</a>
+                  <button class="btn-ghost">Remover</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+
+      <!-- COLUNA DIREITA: RESUMO DE VALORES -->
+      <aside class="col-right">
+
+        <div class="summary">
+          <h2>RESUMO DO PEDIDO</h2>
+
+          <div class="summary-line">
+            <span>Subtotal</span>
+            <span class="value">R$ 279,70</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Frete</span>
+            <span class="value">R$ 20,00</span>
+          </div>
+
+          <div class="summary-line">
+            <span>Desconto (cupom)</span>
+            <span class="value">- R$ 10,00</span>
+          </div>
+
+          <div class="summary-total">
+            <span>Total</span>
+            <span class="value">R$ 289,70</span>
+          </div>
+
+          <div class="summary-actions">
+            <a class="btn-primary" href="checkout.html">Finalizar compra</a>
+            <a class="btn-outline" href="categoria.html">Continuar comprando</a>
+          </div>
+
+          <div class="payment-note">
+            <label for="cupom">Cupom:</label>
+            <input id="cupom" placeholder="Código do cupom"/>
+            <button class="btn-small">Aplicar</button>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+
+    <!-- RODAPÉ SIMPLES -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="ano"></span> Crochê do Sul — Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script>
+    // ano automático
+    document.getElementById('ano').innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
